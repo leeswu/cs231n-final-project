@@ -143,7 +143,7 @@ work_dirs/
 # avoid soft links created by MIM
 mmaction/tools/*
 
-*.ipynb
+# *.ipynb
 
 # unignore ipython notebook files in demo
 !demo/*.ipynb
