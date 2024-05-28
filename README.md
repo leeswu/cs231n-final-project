@@ -1,3 +1,6 @@
+# CS231N Dance Classification
+Final Project for CS 231N Deep Learning for Computer Vision
+
 <div align="center">
   <img src="https://github.com/open-mmlab/mmaction2/raw/main/resources/mmaction2_logo.png" width="600"/>
   <div>&nbsp;</div>
