@@ -113,7 +113,9 @@ venv.bak/
 .mypy_cache/
 
 # custom
-/data
+/data/kinetics400_tiny
+/data/ucf101/videos
+/data/ucf101/UCF101.rar
 .vscode
 .idea
 *.pkl
