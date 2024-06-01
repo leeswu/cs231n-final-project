@@ -11,10 +11,12 @@ model = dict(
 
 # dataset settings
 dataset_type = 'VideoDataset'
-data_root = 'data/ucf101/videos_train/'
-data_root_val = 'data/ucf101/videos_val/'
-ann_file_train = 'data/ucf101/ucf101_train_list.txt'
-ann_file_val = 'data/ucf101/ucf101_val_list.txt'
+data_root = 'data/ucf101/videos'
+data_root_val = 'data/ucf101/videos'
+split = 1  # official train/test splits. valid numbers: 1, 2, 3
+ann_file_train = f'data/ucf101/ucf101_train_split_{split}_videos.txt'
+ann_file_val = f'data/ucf101/ucf101_val_split_{split}_videos.txt'
+ann_file_test = f'data/ucf101/ucf101_val_split_{split}_videos.txt'
 
 train_dataloader = dict(
     dataset=dict(
