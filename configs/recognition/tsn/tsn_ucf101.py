@@ -14,7 +14,7 @@ dataset_type = 'VideoDataset'
 data_root = 'data/ucf101/videos_train/'
 data_root_val = 'data/ucf101/videos_val/'
 ann_file_train = 'data/ucf101/annotations/trainlist01.txt'
-ann_file_val = 'data/ucf101/annontations/trainlist02.txt'
+ann_file_val = 'data/ucf101/annotations/trainlist02.txt'
 
 train_dataloader = dict(
     dataset=dict(
