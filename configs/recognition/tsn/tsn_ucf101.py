@@ -11,8 +11,8 @@ model = dict(
 
 # dataset settings
 dataset_type = 'VideoDataset'
-data_root = 'data/ucf101/videos_train/'
-data_root_val = 'data/ucf101/videos_val/'
+data_root = 'data/ucf101/videos/'
+data_root_val = 'data/ucf101/videos/'
 ann_file_train = 'data/ucf101/annotations/trainlist01.txt'
 ann_file_val = 'data/ucf101/annotations/trainlist02.txt'
 
