@@ -7,7 +7,7 @@ _base_ = [
 model = dict(
     cls_head=dict(
         type='TSNHead',
-        num_classes=101  # change from 400 to 101
+        num_classes=18  # change from 400 to 18
         ))
 
 # dataset settings

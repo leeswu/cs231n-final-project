@@ -118,6 +118,7 @@ venv.bak/
 /data/ucf101/UCF101.rar
 /data/k700-2020
 /data/k700-2020.zip
+/data/kinetics700
 .vscode
 .idea
 *.pkl
