@@ -13,7 +13,7 @@ ann_file_val = 'data/kinetics700/updated_splits/val.txt'
 ann_file_test = 'data/kinetics700/updated_splits/test.txt'
 
 model = dict(
-    cls_head=dict(num_classes=2))
+    cls_head=dict(num_classes=18))
 load_from = 'https://download.openmmlab.com/mmaction/v1.0/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb_20220906-cd10898e.pth'
 
 file_client_args = dict(io_backend='disk')
