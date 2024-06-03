@@ -6,7 +6,7 @@ val_directory_path = 'data/k700-2020/updated_splits/small_val'
 
 # Read the list of file names from small_test.txt
 with open(test_file_list_path, 'r') as file:
-    test_files = [line.strip() for line in file]
+    test_files = [line.split()[0] for line in file]
 
 # Check if each file in the list exists in the small_val directory
 missing_files = []
