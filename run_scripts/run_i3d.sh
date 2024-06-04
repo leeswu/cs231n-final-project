@@ -1,17 +1,23 @@
 #!/bin/bash
-set -e
+# set -e
+
+# # Run training
+# python tools/train.py configs/recognition/i3d/i3d_i3dpl_dance.py
+# # Run Testing
+# python tools/test.py configs/recognition/i3d/i3d_i3dpl_dance.py \
+#     work_dirs/i3d_i3dpl_dance/best_acc_*.pth
+
+# # Run training
+# python tools/train.py configs/recognition/i3d/i3d_i3dpl_heavy_dance.py
+# # Run Testing
+# python tools/test.py configs/recognition/i3d/i3d_i3dpl_heavy_dance.py \
+#     work_dirs/i3d_i3dpl_heavy_dance/best_acc_*.pth
 
 # Run training
-python tools/train.py configs/recognition/i3d/i3d_i3dpl_dance.py
+python tools/train.py configs/recognition/i3d/i3d_i3dpl_dp_dance.py
 # Run Testing
-python tools/test.py configs/recognition/i3d/i3d_i3dpl_dance.py \
-    work_dirs/i3d_i3dpl_dance/best_acc_*.pth
-
-# Run training
-python tools/train.py configs/recognition/i3d/i3d_i3dpl_heavy_dance.py
-# Run Testing
-python tools/test.py configs/recognition/i3d/i3d_i3dpl_heavy_dance.py \
-    work_dirs/i3d_i3dpl_heavy_dance/best_acc_*.pth
+python tools/test.py configs/recognition/i3d/i3d_i3dpl_dp_dance.py \
+    work_dirs/i3d_i3dpl_dp_dance/best_acc_*.pth
 
 # # Run training
 # python tools/train.py configs/recognition/csn/ipcsn_dance.py
