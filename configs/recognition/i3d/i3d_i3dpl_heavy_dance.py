@@ -7,14 +7,13 @@ _base_ = [
 dataset_type = 'VideoDataset'
 data_root = 'data/k700-2020/updated_splits/small_train'
 data_root_val = 'data/k700-2020/updated_splits/small_val'
-data_root_test = 'data/k700-2020/updated_splits/small_test'
 ann_file_train = 'data/k700-2020/updated_splits/small_train.txt'
 ann_file_val = 'data/k700-2020/updated_splits/small_val.txt'
-ann_file_test = 'data/k700-2020/updated_splits/small_test.txt'
+ann_file_test = 'data/k700-2020/updated_splits/small_val.txt'
 
 model = dict(
     cls_head=dict(num_classes=19))
-load_from = 'i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth'
+load_from = 'i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth'
 
 file_client_args = dict(io_backend='disk')
 train_pipeline = [
@@ -92,7 +91,7 @@ test_dataloader = dict(
     dataset=dict(
         type=dataset_type,
         ann_file=ann_file_test,
-        data_prefix=dict(video=data_root_test),
+        data_prefix=dict(video=data_root_val),
         pipeline=test_pipeline,
         test_mode=True))
 
