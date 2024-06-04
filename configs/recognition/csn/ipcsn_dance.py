@@ -129,4 +129,4 @@ train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=10, val_interval=1)
 #   - `enable` means enable scaling LR automatically
 #       or not by default.
 #   - `base_batch_size` = (8 GPUs) x (12 samples per GPU).
-auto_scale_lr = dict(enable=False, base_batch_size=32)
+auto_scale_lr = dict(enable=False, base_batch_size=12)
