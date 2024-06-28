@@ -1,34 +1,24 @@
 # Dancing in Style: Classifying Dance Videos By Style
 
-<div style="display: flex; justify-content: space-around;">
-  <div style="flex: 1; text-align: center;">
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <div style="flex: 1; text-align: center; margin: 10px;">
     <img src="https://media.giphy.com/media/zvIIy47mvytas2oyUI/giphy.gif" alt="Ballet" style="max-width: 100%; height: auto;">
   </div>
-  <div style="flex: 1; text-align: center;">
+  <div style="flex: 1; text-align: center; margin: 10px;">
     <img src="https://media.giphy.com/media/KRfOTpKsHpXyb9tfwI/giphy.gif" alt="Breakdance" style="max-width: 100%; height: auto;">
   </div>
-  <div style="flex: 1; text-align: center;">
+  <div style="flex: 1; text-align: center; margin: 10px;">
     <img src="https://media.giphy.com/media/ridB5JeMnuK1tAb9ZB/giphy.gif" alt="Zumba" style="max-width: 100%; height: auto;">
   </div>
-  <div style="flex: 1; text-align: center;">
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHJvd2docHo4dTV3djN5MWJleG5mN2tlc3RhYmtqb3F0MzZuZ212eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z7PgsPmsSBYsxAavPJ/giphy-downsized-large.gif" alt="Tango" style="max-width: 100%; height: auto;">
+  <div style="flex: 1; text-align: center; margin: 10px;">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHJvd2docHo4dTV3djN5MWJleG5mN2tlc3RhYmtqb3F0MzZuZ212eSZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/z7PgsPmsSBYsxAavPJ/giphy-downsized-large.gif" alt="Tango" style="max-width: 100%; height: auto;">
   </div>
 </div>
 
-<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <div style="flex: 1; text-align: center;">
-    Sophie Wu<br>
-    Stanford University<br>
-  </div>
-  <div style="flex: 1; text-align: center;">
-    Han Dao<br>
-    Stanford University<br>
-  </div>
-  <div style="flex: 1; text-align: center;">
-    Esteban Nathan Guzman<br>
-    Stanford University<br>
-  </div>
-</div>
+**Authors**:
+| Sophie Wu | Han Dao | Nathan Guzman |
+| --- | --- | --- |
+| Stanford University | Stanford University | Stanford University |
 
 ## Abstract
 The task of classifying human actions in videos has been a significant area of computer vision research, with dance being a culturally rich and stylistically diverse subset. In this project, we present a novel approach to classify dance videos by style using an enhanced Two-Stream Inflated 3D ConvNet (I3D) model. We leverage the Kinetics-700 and Let's Dance datasets, combining them to create a robust dataset for training and evaluation. Our method and experimentation involve extensive hyperparameter tuning to improve the model performance. Additionally, we experimented with transfer learning by fine-tuning two different existing I3D models, originally based on the ResNet50 and the ResNet50 (NonLocal Dot Product) backbones, on our dance-focused dataset. Experimental results demonstrate the effectiveness of our approach, achieving accuracy in classifying various dance styles.
